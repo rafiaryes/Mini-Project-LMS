@@ -1,0 +1,16 @@
+{
+  "name": "lms-project",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "bun run --filter api dev",
+    "dev:web": "bun run --filter web dev",
+    "dev": "bun run --filter '*' dev",
+    "test:api": "bun run --filter api test",
+    "db:generate": "bun run --filter api db:generate",
+    "db:migrate": "bun run --filter api db:migrate",
+    "db:seed": "bun run --filter api db:seed"
+  }
+}
